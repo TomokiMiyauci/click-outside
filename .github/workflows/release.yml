@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14]
+        node: [15]
 
     steps:
       - uses: actions/setup-node@v2-beta
@@ -44,7 +44,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14]
+        node: [15]
 
     steps:
       - uses: actions/setup-node@v2-beta
@@ -78,7 +78,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14]
+        node: [15]
 
     steps:
       - uses: actions/setup-node@v2-beta
@@ -105,7 +105,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14]
+        node: [15]
 
     steps:
       - uses: actions/setup-node@v2-beta
@@ -157,7 +157,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14]
+        node: [15]
     steps:
       - uses: actions/setup-node@v2-beta
         with:
