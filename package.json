@@ -11,12 +11,13 @@
       "require": "./dist/index.umd.js"
     }
   },
+  "sideEffects": false,
   "author": {
     "name": "TomokiMiyauci",
     "email": "development.operation6.6.6@gmail.com",
     "url": "https://miyauchi.dev/"
   },
-  "homepage": "https://github.com/TomokiMiyauci/arithmetic4",
+  "homepage": "https://github.com/TomokiMiyauci/arithmetic4#readme",
   "bugs": "https://github.com/TomokiMiyauci/arithmetic4/issues",
   "repository": {
     "type": "git",
