@@ -1,3 +1,8 @@
+# [v1.0.2](https://github.com/TomokiMiyauci/arithmetic4/compare/v1.0.1...v1.0.2) (2021-04-11)
+
+## 🐛 Bug Fixes
+- [`4c391fa`](https://github.com/TomokiMiyauci/arithmetic4/commit/4c391fa)   Fix type inference
+
 # [v1.0.1](https://github.com/TomokiMiyauci/arithmetic4/compare/v1.0.0...v1.0.1) (2021-04-10)
 
 ## 🐛 Bug Fixes
