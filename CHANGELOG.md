@@ -1,3 +1,8 @@
+# [v1.0.5](https://github.com/TomokiMiyauci/arithmetic4/compare/v1.0.4...v1.0.5) (2021-04-11)
+
+## 🐛 Bug Fixes
+- [`f995b5f`](https://github.com/TomokiMiyauci/arithmetic4/commit/f995b5f)   Fix global name
+
 # [v1.0.4](https://github.com/TomokiMiyauci/arithmetic4/compare/v1.0.3...v1.0.4) (2021-04-11)
 
 ## 🔒 Security Issues
