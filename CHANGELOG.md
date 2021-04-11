@@ -1,3 +1,8 @@
+# [v1.0.4](https://github.com/TomokiMiyauci/arithmetic4/compare/v1.0.3...v1.0.4) (2021-04-11)
+
+## 🔒 Security Issues
+- [`2170c5f`](https://github.com/TomokiMiyauci/arithmetic4/commit/2170c5f)   Add SECURITY.md
+
 # [v1.0.3](https://github.com/TomokiMiyauci/arithmetic4/compare/v1.0.2...v1.0.3) (2021-04-11)
 
 ## 🐛 Bug Fixes
