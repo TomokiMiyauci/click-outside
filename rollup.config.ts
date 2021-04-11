@@ -13,7 +13,7 @@ const config = {
       file: main,
       format: 'umd',
       sourcemap: true,
-      name: 'Placeholder'
+      name: 'Arithmetic'
     },
     {
       file: module,
