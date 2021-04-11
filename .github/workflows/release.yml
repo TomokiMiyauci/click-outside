@@ -61,15 +61,13 @@ jobs:
           path: '**/node_modules'
           key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
 
-      - name: Cache dist
-        id: dist_cache_id
-        uses: actions/cache@v2
-        with:
-          path: '**/dist'
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-dist }}
-
       - name: Build
         run: yarn build
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist
 
   lint:
     needs: [setup]
@@ -174,12 +172,10 @@ jobs:
           path: '**/node_modules'
           key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
 
-      - name: Restore dist
-        id: dist_cache_id
-        uses: actions/cache@v2
+      - uses: actions/download-artifact@v2
         with:
-          path: '**/dist'
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-dist }}
+          name: dist
+          path: dist
 
       - name: Release
         if: steps.dist_cache_id.outputs.cache-hit == 'true'
