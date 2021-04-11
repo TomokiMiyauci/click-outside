@@ -34,6 +34,8 @@
   ],
   "license": "MIT",
   "scripts": {
+    "commit": "cz",
+    "prepare": "husky install",
     "lint": "eslint . --ext .ts --ignore-pattern dist",
     "build": "rollup -c rollup.config.ts",
     "test": "jest",
@@ -55,7 +57,7 @@
     "eslint": "^7.23.0",
     "eslint-plugin-jest": "^24.3.2",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "husky": "^5.2.0",
+    "husky": "^6.0.0",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
     "rollup": "^2.45.1",
