@@ -178,7 +178,6 @@ jobs:
           path: dist
 
       - name: Release
-        if: steps.dist_cache_id.outputs.cache-hit == 'true'
         run: yarn release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
