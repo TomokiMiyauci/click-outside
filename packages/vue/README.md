@@ -1,27 +1,111 @@
-# Vue 3 + Typescript + Vite
+# @miyauci/vue-click-outside
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+![npm version](https://img.shields.io/npm/v/@miyauci/vue-click-outside.svg?style=flat)
+![bundle size](https://img.shields.io/bundlephobia/min/@miyauci/vue-click-outside)
+![npm download](https://img.shields.io/npm/dw/@miyauci/vue-click-outside?color=blue)
+![npm type definitions](https://img.shields.io/npm/types/@miyauci/vue-click-outside)
+![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)
+![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat)
+![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)
+![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Recommended IDE Setup
+## :truck: Install
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+```bash
+npm i -s @miyauci/vue-click-outside
+or
+yarn add @miyauci/vue-click-outside
+```
 
-### If Using `<script setup>`
+## Usage
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+This provides 3 way Usage.
 
-## Type Support For `.vue` Imports in TS
+### Global directive
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+It can be used with all components.
 
-### If Using Volar
+```ts
+import { createApp } from 'vue'
+import App from './App.vue'
+import { plugin } from '@miyauci/vue-click-outside'
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+const app = createApp(App)
 
-### If Using Vetur
+app.use(plugin()) // 'v-click-outside' directive usable by default.
+// Or you can customize directive name => 'v-click-out'
+app.use(
+  plugin({
+    name: 'ClickOut' // PascalCase
+  })
+)
+app.mount('#app')
+```
 
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+template
+
+```html
+<template>
+  <div v-click-outside="onClickOut">...</div>
+</template>
+```
+
+#### Options API
+
+```ts
+<script lang="ts">
+export default {
+  methods: {
+    onClickOut(event) {
+      console.log(event)
+    }
+  }
+}
+</script>
+```
+
+#### Composition API
+
+```ts
+<script setup lang="ts">
+const onClickOut = (event) => console.log(evnet)
+</script>
+```
+
+### Directive
+
+```ts
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { directive } from '@miyauci/vue-click-outside'
+
+export default defineComponent({
+  directives: {
+    ClickOutside: directive
+  },
+  setup() {
+    return {
+      onClickOut: (e) => console.log(e)
+    }
+  }
+})
+</script>
+```
+
+### Mixin
+
+```ts
+<script lang="ts">
+import { mixin } from '@miyauci/vue-click-outside'
+export default defineComponent({
+  mixins: [mixin]
+
+  setup() {
+    return {
+      onClickOut: (e) => console.log(e)
+    }
+  }
+}
+</script>
+```
