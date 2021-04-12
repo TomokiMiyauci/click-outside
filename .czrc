@@ -2,7 +2,7 @@
   "path": "cz-emoji",
   "config": {
     "cz-emoji": {
-      "scopes": ["docs"],
+      "scopes": ["shared", "vue","docs"],
       "types": [
         {
           "emoji": "🎨",

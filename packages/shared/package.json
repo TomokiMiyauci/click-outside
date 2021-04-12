@@ -1,0 +1,17 @@
+{
+  "name": "shared",
+  "description": "shared constrains, types and functions",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "commit": "yarn --cwd ../.. commit",
+    "cz": "yarn commit",
+    "lint": "eslint . --ext .ts --ignore-pattern dist",
+    "test": "jest"
+  },
+  "author": {
+    "name": "TomokiMiyauci",
+    "email": "development.operation6.6.6@gmail.com",
+    "url": "https://miyauchi.dev/"
+  }
+}

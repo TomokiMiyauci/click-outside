@@ -1,0 +1,55 @@
+{
+  "name": "@miyauci/vue-click-outside",
+  "description": "vue directive for outside click",
+  "version": "0.0.0",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.es.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "commit": "yarn --cwd ../.. commit",
+    "cz": "yarn commit",
+    "dev": "vite",
+    "lint": "eslint . --ext .ts --ignore-pattern dist",
+    "build": "run-p build:*",
+    "build:lib": "vite build",
+    "build:types": "dts-bundle-generator --no-banner -o dist/index.d.ts src/index.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.1",
+    "@vue/compiler-sfc": "^3.0.5",
+    "dts-bundle-generator": "^5.8.0",
+    "vite": "^2.1.5",
+    "vue-tsc": "^0.0.15"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": {
+    "name": "TomokiMiyauci",
+    "email": "development.operation6.6.6@gmail.com",
+    "url": "https://miyauchi.dev/"
+  },
+  "homepage": "https://github.com/TomokiMiyauci/arithmetic4#readme",
+  "bugs": "https://github.com/TomokiMiyauci/arithmetic4/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TomokiMiyauci/arithmetic4.git"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/tomoki_miyauci"
+  }
+}
