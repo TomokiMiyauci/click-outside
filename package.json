@@ -17,7 +17,7 @@
     "build": "wsrun -t -m build",
     "build:docs": "vitepress build docs",
     "test": "echo test",
-    "release": "multi-semantic-release --ignore-packages=docs/*,packages/shared"
+    "release": "multi-semantic-release --ignore-packages=docs/*,packages/shared --dry-run"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",

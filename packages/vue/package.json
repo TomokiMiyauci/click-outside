@@ -42,14 +42,17 @@
     "email": "development.operation6.6.6@gmail.com",
     "url": "https://miyauchi.dev/"
   },
-  "homepage": "https://github.com/TomokiMiyauci/arithmetic4#readme",
-  "bugs": "https://github.com/TomokiMiyauci/arithmetic4/issues",
+  "homepage": "https://github.com/TomokiMiyauci/click-outside#readme",
+  "bugs": "https://github.com/TomokiMiyauci/click-outside/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TomokiMiyauci/arithmetic4.git"
+    "url": "https://github.com/TomokiMiyauci/click-outside.git"
   },
   "funding": {
     "type": "patreon",
     "url": "https://www.patreon.com/tomoki_miyauci"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
