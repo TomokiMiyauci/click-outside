@@ -37,6 +37,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
+    "multi-semantic-release": "^2.8.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "rollup": "^2.45.1",
