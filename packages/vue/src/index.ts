@@ -3,14 +3,16 @@ import { Plugin } from 'vue'
 
 import { clickOutside } from '@/directives'
 
-const plugin: Plugin = {
-  install: (app) => {
-    app.directive(DEFAULT_NAME, clickOutside)
-  }
+type Options = {
+  name: string
 }
+const plugin = ({ name = DEFAULT_NAME }: Partial<Options>): Plugin => ({
+  install: (app) => {
+    app.directive(name, clickOutside)
+  }
+})
 const mixin = {
   directives: { ClickOutside: clickOutside }
 }
 
-export { clickOutside as directive, mixin }
-export default plugin
+export { clickOutside as directive, mixin, plugin }

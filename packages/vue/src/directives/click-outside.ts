@@ -6,6 +6,7 @@ import { Directive, DirectiveHook } from 'vue'
 
 type Binding = undefined | unknown | AnyFn
 const WARNING = '[v-click-outside]: binding value must be set function'
+const getEventType = () => (document.ontouchstart ? 'touchstart' : 'click')
 
 interface ExtendedNode extends Node {
   [key]?: AnyFn
@@ -36,12 +37,12 @@ const onMount: DirectiveHook<ExtendedNode, any, Binding> = (
     }
   }
   if (el[key]) {
-    document.addEventListener('click', el[key] as AnyFn)
+    document.addEventListener(getEventType(), el[key] as AnyFn)
   }
 }
 const onUnmounted: DirectiveHook<ExtendedNode> = (el) => {
   if (el[key]) {
-    document.removeEventListener('click', el[key] as AnyFn)
+    document.removeEventListener(getEventType(), el[key] as AnyFn)
     delete el[key]
   }
 }
