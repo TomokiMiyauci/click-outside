@@ -2,13 +2,13 @@
   "name": "@miyauci/vue-click-outside",
   "description": "vue directive for outside click",
   "version": "1.0.0",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.es.d.ts",
+  "main": "dist/vue-click-outside.umd.js",
+  "module": "dist/vue-click-outside.es.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
+      "import": "./dist/vue-click-outside.es.js",
+      "require": "./dist/vue-click-outside.umd.js"
     }
   },
   "sideEffects": false,

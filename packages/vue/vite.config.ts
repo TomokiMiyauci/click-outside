@@ -17,7 +17,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(baseDir, 'index.ts'),
-      name: 'MyLib'
+      name: 'VueClickOutside'
     },
     rollupOptions: {
       external: ['vue'],
