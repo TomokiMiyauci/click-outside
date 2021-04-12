@@ -16,7 +16,7 @@
     "lint": "wsrun -m lint",
     "build": "wsrun -t -m build",
     "build:docs": "vitepress build docs",
-    "test": "wsrun -m test",
+    "test": "echo test",
     "release": "multi-semantic-release --ignore-packages=docs/*,packages/shared"
   },
   "devDependencies": {
