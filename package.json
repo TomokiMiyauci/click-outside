@@ -1,0 +1,47 @@
+{
+  "name": "click-outside-monorepo",
+  "description": "outside click utility for multi framework in monorepo",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "docs/*"
+    ],
+    "nohoist": []
+  },
+  "license": "MIT",
+  "scripts": {
+    "commit": "cz",
+    "prepare": "husky install",
+    "lint": "wsrun -m lint",
+    "build": "wsrun -t -m build",
+    "build:docs": "vitepress build docs",
+    "test": "wsrun -m test",
+    "release": "multi-semantic-release --ignore-packages=docs/*"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@swc/jest": "^0.1.2",
+    "@types/jest": "^26.0.22",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "@wessberg/rollup-plugin-ts": "^1.3.11",
+    "commitizen": "^4.2.3",
+    "commitlint-config-gitmoji": "^2.2.3",
+    "cz-emoji": "^1.3.1",
+    "dts-bundle-generator": "^5.8.0",
+    "eslint": "^7.23.0",
+    "eslint-plugin-jest": "^24.3.5",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "rollup": "^2.45.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "semantic-release-gitmoji": "^1.3.4",
+    "typescript": "^4.2.3"
+  }
+}
