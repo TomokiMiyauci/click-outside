@@ -128,25 +128,25 @@ jobs:
           name: coverage
           path: coverage
 
-  report-coverage:
-    needs: [test]
-    runs-on: ${{ matrix.os }}
+  # report-coverage:
+  #   needs: [test]
+  #   runs-on: ${{ matrix.os }}
 
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
+  #   strategy:
+  #     matrix:
+  #       os: [ubuntu-latest]
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
 
-      - uses: actions/download-artifact@v2
-        with:
-          name: coverage
+  #     - uses: actions/download-artifact@v2
+  #       with:
+  #         name: coverage
 
-      - uses: codecov/codecov-action@v1
-        with:
-          files: coverage/clover.xml
+  #     - uses: codecov/codecov-action@v1
+  #       with:
+  #         files: coverage/clover.xml
 
   release:
     needs: [lint, test, build]
