@@ -1,0 +1,14 @@
+{
+  "clearMocks": true,
+  "coverageDirectory": "coverage",
+  "coverageProvider": "v8",
+  "testEnvironment": "jsdom",
+  "testMatch": ["**/test/**/*.ts?(x)"],
+  "transform": {
+    "^.+\\.ts$": "@swc/jest"
+  },
+  "moduleNameMapper": {
+    "^@/(.+)$": "<rootDir>/src/$1",
+    "@share/(.+)": "<rootDir>/../shared/src/$1"
+  }
+}
