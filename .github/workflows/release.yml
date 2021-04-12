@@ -66,8 +66,8 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: dist
-          path: dist
+          name: dist-vue
+          path: packages/vue/dist
 
   lint:
     needs: [setup]
@@ -173,8 +173,8 @@ jobs:
 
       - uses: actions/download-artifact@v2
         with:
-          name: dist
-          path: dist
+          name: dist-vue
+          path: packages/vue/dist
 
       - name: Release
         run: yarn release
