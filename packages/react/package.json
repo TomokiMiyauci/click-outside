@@ -1,7 +1,7 @@
 {
   "name": "@miyauci/react-click-outside",
   "description": "react custom hooks for outside click",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "dist/react-click-outside.umd.js",
   "module": "dist/react-click-outside.es.js",
   "types": "dist/index.d.ts",
