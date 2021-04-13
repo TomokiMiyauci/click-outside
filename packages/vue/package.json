@@ -37,7 +37,14 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
+  "keywords": [
+    "vue",
+    "directives",
+    "mixin",
+    "click",
+    "outside",
+    "click outside"
+  ],
   "author": {
     "name": "TomokiMiyauci",
     "email": "development.operation6.6.6@gmail.com",
