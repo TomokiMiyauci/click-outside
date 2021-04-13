@@ -1,0 +1,66 @@
+{
+  "name": "@miyauci/react-click-outside",
+  "description": "react custom hooks for outside click",
+  "version": "0.0.0",
+  "main": "dist/react-click-outside.umd.js",
+  "module": "dist/react-click-outside.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/react-click-outside.es.js",
+      "require": "./dist/react-click-outside.umd.js"
+    }
+  },
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "commit": "yarn --cwd ../.. commit",
+    "cz": "yarn commit",
+    "dev": "vite",
+    "lint": "eslint . --ext .ts --ignore-pattern dist",
+    "build": "run-p build:*",
+    "build:lib": "vite build",
+    "build:types": "dts-bundle-generator --no-banner --external-imports=react -o dist/index.d.ts src/index.ts",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react-refresh": "^1.3.1",
+    "typescript": "^4.1.2",
+    "vite": "^2.1.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "click",
+    "click-outside",
+    "outside"
+  ],
+  "author": {
+    "name": "TomokiMiyauci",
+    "email": "development.operation6.6.6@gmail.com",
+    "url": "https://miyauchi.dev/"
+  },
+  "homepage": "https://github.com/TomokiMiyauci/click-outside/tree/main/packages/react#readme",
+  "bugs": "https://github.com/TomokiMiyauci/click-outside/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TomokiMiyauci/click-outside.git"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/tomoki_miyauci"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
