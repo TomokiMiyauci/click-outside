@@ -18,7 +18,7 @@ or
 yarn add @miyauci/vue-click-outside
 ```
 
-## Usage
+## :bulb: Usage
 
 This provides 3 way Usage.
 

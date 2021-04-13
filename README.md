@@ -14,7 +14,7 @@
 This repository is monorepo. You can check each package under the `packages/*` directory.
 
 - [x] [Vue3](packages/vue)
-- [ ] React
+- [x] [React](packages/react)
 - [ ] Svelte
 
 ## :page_facing_up: License
