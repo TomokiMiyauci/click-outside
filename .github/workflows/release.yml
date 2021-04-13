@@ -69,6 +69,11 @@ jobs:
           name: dist-vue
           path: packages/vue/dist
 
+      - uses: actions/upload-artifact@v2
+        with:
+          name: dist-react
+          path: packages/react/dist
+
   lint:
     needs: [setup]
     runs-on: ${{ matrix.os }}
@@ -175,6 +180,11 @@ jobs:
         with:
           name: dist-vue
           path: packages/vue/dist
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: dist-react
+          path: packages/react/dist
 
       - name: Release
         run: yarn release
