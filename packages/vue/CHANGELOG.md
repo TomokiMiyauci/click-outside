@@ -1,3 +1,8 @@
+# [v1.2.4](https://github.com/TomokiMiyauci/click-outside/compare/@miyauci/vue-click-outside@1.2.3...@miyauci/vue-click-outside@1.2.4) (2021-04-14)
+
+## 🐛 Bug Fixes
+- [`f452228`](https://github.com/TomokiMiyauci/click-outside/commit/f452228)  (react) Fix adding react-dom to peerDependencies
+
 # [v1.2.3](https://github.com/TomokiMiyauci/click-outside/compare/@miyauci/vue-click-outside@1.2.2...@miyauci/vue-click-outside@1.2.3) (2021-04-14)
 
 ## 🐛 Bug Fixes
