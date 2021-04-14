@@ -25,7 +25,7 @@
     "build:types": "dts-bundle-generator --no-banner -o dist/index.d.ts src/index.ts",
     "test": "jest"
   },
-  "dependencies": {
+  "peerDependencies": {
     "vue": "^3.0.5"
   },
   "devDependencies": {
