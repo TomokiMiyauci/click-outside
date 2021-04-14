@@ -11,7 +11,7 @@
 ![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<div>
+</div>
 
 # @miyauci/vue-click-outside
 
