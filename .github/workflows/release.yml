@@ -186,6 +186,9 @@ jobs:
           name: dist-react
           path: packages/react/dist
 
+      - name: Copy LICENSE
+        run: echo packages/react/LICENSE packages/vue/LICENSE | xargs -n 1 cp -v LICENSE
+
       - name: Release
         run: yarn release
         env:
