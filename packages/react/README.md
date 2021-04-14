@@ -27,7 +27,7 @@ import React, { useRef } from 'react'
 import { useClickOutside } from '@miyauci/react-click-outside'
 
 const App: FC = () => {
-  const ref = useRef<HTMLElement>()
+  const ref = useRef<HTMLElement>(null)
   const onClick = () => console.log('Outside clicked')
 
   useClickOutside(ref, onClick)
@@ -42,3 +42,7 @@ const App: FC = () => {
   )
 }
 ```
+
+## :revolving_hearts: Related
+
+- [@miyauci/vue-click-outside](../vue)

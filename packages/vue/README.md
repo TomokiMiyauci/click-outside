@@ -110,3 +110,7 @@ export default defineComponent({
 }
 </script>
 ```
+
+## :revolving_hearts: Related
+
+- [@miyauci/react-click-outside](../react)
