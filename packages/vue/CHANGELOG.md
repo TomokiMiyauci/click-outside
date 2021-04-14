@@ -1,3 +1,8 @@
+# [v1.2.3](https://github.com/TomokiMiyauci/click-outside/compare/@miyauci/vue-click-outside@1.2.2...@miyauci/vue-click-outside@1.2.3) (2021-04-14)
+
+## 🐛 Bug Fixes
+- [`c749f01`](https://github.com/TomokiMiyauci/click-outside/commit/c749f01)   Fix dependencies
+
 # [v1.2.2](https://github.com/TomokiMiyauci/click-outside/compare/@miyauci/vue-click-outside@1.2.1...@miyauci/vue-click-outside@1.2.2) (2021-04-14)
 
 ## 🐛 Bug Fixes
