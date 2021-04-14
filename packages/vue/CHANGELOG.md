@@ -1,3 +1,8 @@
+# [v1.2.2](https://github.com/TomokiMiyauci/click-outside/compare/@miyauci/vue-click-outside@1.2.1...@miyauci/vue-click-outside@1.2.2) (2021-04-14)
+
+## 🐛 Bug Fixes
+- [`3436ddf`](https://github.com/TomokiMiyauci/click-outside/commit/3436ddf)  (react) Fix interface types
+
 # [v1.2.1](https://github.com/TomokiMiyauci/click-outside/compare/@miyauci/vue-click-outside@1.2.0...@miyauci/vue-click-outside@1.2.1) (2021-04-13)
 
 ## 🐛 Bug Fixes
