@@ -97,6 +97,7 @@ export default defineComponent({
 
 ```ts
 <script lang="ts">
+import { defineComponent } from 'vue'
 import { mixin } from '@miyauci/vue-click-outside'
 export default defineComponent({
   mixins: [mixin]
