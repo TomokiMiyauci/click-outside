@@ -1,11 +1,11 @@
-import { MutableRefObject, useEffect, useRef } from 'react'
+import { RefObject, useEffect, useRef } from 'react'
 
 type ListenerEvent = MouseEvent & {
   target: Element
 }
 
 const useClickOutside = <T extends Element>(
-  ref: MutableRefObject<T | undefined>,
+  ref: RefObject<T | undefined>,
   callback: (event: MouseEvent) => void,
   eventType = 'click' as const
 ): void => {
