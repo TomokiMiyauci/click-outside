@@ -2124,10 +2124,10 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.0.11.tgz#20d22dd0da7d358bb21c17f9bde8628152642c77"
   integrity sha512-b+zB8A2so8eCE0JsxjL24J7vdGl8rzPQ09hZNhystm+KqSbKcAej1A+Hbva1rCMmTTqA+hFnUSDc5kouEo0JzA==
 
-"@vue/test-utils@^2.0.0-rc.4":
-  version "2.0.0-rc.4"
-  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-2.0.0-rc.4.tgz#536175be968e7c5741e9c95f117024d5053ea54c"
-  integrity sha512-DocrrFP28M7NO7y7iGiX9sf9n1AKEqkxXO5wedtp5FkHiAkc0xfmD4lvxgi4re5+xw7Zzb9U/vrhXKQZ0I4Q9g==
+"@vue/test-utils@^2.0.0-rc.11":
+  version "2.0.0-rc.11"
+  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-2.0.0-rc.11.tgz#62521dc1d758cb0458a375e7eba1a4503e1e27f5"
+  integrity sha512-7XMp3ha/dSvPoJAWx9Ils9CLByu8Ntk/DOPXj8Elp/fqtUXngj/DiXEcBBNLboiS5ux3xYfKfakzz4JNpind+A==
 
 "@wessberg/browserslist-generator@^1.0.47":
   version "1.0.47"
